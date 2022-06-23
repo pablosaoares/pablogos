@@ -31,6 +31,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
         MenuCadastro = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
         MenuSair = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
 
@@ -56,6 +58,18 @@ public class TelaPrincipal extends javax.swing.JFrame {
         MenuCadastro.add(jMenuItem3);
 
         jMenuBar1.add(MenuCadastro);
+
+        jMenu1.setText("Listar");
+
+        jMenuItem4.setText("Listagens");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem4);
+
+        jMenuBar1.add(jMenu1);
 
         MenuSair.setText("Sair");
         MenuSair.addActionListener(new java.awt.event.ActionListener() {
@@ -109,6 +123,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         CadEleitor.show();
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        TelaVotos Consult = new TelaVotos();
+        Consult.show();
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -147,9 +166,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu MenuCadastro;
     private javax.swing.JMenu MenuSair;
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
     // End of variables declaration//GEN-END:variables
 }
