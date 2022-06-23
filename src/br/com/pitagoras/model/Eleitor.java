@@ -5,6 +5,7 @@ public class Eleitor {
     private String nome;
     private String cpf;
     private int tituloEleitor;
+    private int id;
 
     /**
      * @return the nome
@@ -46,6 +47,20 @@ public class Eleitor {
      */
     public void setTituloEleitor(int tituloEleitor) {
         this.tituloEleitor = tituloEleitor;
+    }
+
+    /**
+     * @return the id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
     }
     
     
