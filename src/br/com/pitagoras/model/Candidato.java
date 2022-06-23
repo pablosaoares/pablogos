@@ -6,6 +6,7 @@ public class Candidato {
     private String partido;
     private String cargo;
     private int numero;
+    private int id;
 
     /**
      * @return the nome
@@ -61,6 +62,20 @@ public class Candidato {
      */
     public void setNumero(int numero) {
         this.numero = numero;
+    }
+
+    /**
+     * @return the id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
     }
     
 }
