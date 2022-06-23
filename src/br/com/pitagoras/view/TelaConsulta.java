@@ -134,7 +134,11 @@ public class TelaConsulta extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPesquisarActionPerformed
-       ListarValoresEleitores();
+       if(ComboBox.getSelectedItem().equals("Candidato")){
+           ListarValoresCandidatos();
+       }if(ComboBox.getSelectedItem().equals("Eleitor")){
+           ListarValoresEleitores();
+       }
     }//GEN-LAST:event_BtnPesquisarActionPerformed
 
     /**
